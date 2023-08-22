@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  background-image: url("https://e0.pxfuel.com/wallpapers/127/455/desktop-wallpaper-mortal-kombat-logo-mortal-kombat-games-fan-site.jpg");
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
+  color: white;
+}
+header .logo img {
+  max-width: 40px;
+  max-height: 40px;
+}
+header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #2fa8cc;
+  color: white;
+}
+header .menu ul {
+  list-style: none;
+}
+header .menu a {
+  text-decoration: none;
+}
+header .menu #bigDaddy {
+  background-color: #bada55;
+  width: 100%;
+  height: 50px;
+}
+header .menu #bigDaddy li,
+header .menu #bigDaddy li #orphanage .kid {
+  display: inline-block;
+}
+header .menu #bigDaddy li a {
+  display: block;
+  padding: 0 20px;
+  line-height: 45px;
+}
+header .menu #bigDaddy li a:hover {
+  background-color: #fff;
+  border-bottom: solid 5px green;
+}
+header .menu #bigDaddy li #orphanage {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 130px;
+  background-color: lightblue;
+  text-align: center;
+}
+header .menu #bigDaddy li #orphanage .kid a {
+  border-bottom: none;
+}
+header .menu #bigDaddy .dad:hover #orphanage {
+  display: block;
+}
+header .menu #bigDaddy img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  position: relative;
+  top: 10px;
+}
+@media (min-width: 768px) {
+  header .menu #bigDaddy img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+}
+header .search-form {
+  display: flex;
+  align-items: center;
+  background-color: #2fa8cc;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+header .search-form .search-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+header .search-form button[type=submit] {
+  background-color: white;
+  color: #2fa8cc;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+header .search-form button[type=submit]:hover {
+  background-color: white;
+}
+header .search-form .close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+header .search-form .close-button img {
+  width: 20px;
+}
+header .menu-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+header .menu-right ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+header .menu-right ul li {
+  margin-right: 10px;
+}
+header .menu-right ul li a {
+  display: block;
+}
+header .menu-right ul li a img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+header .menu-right ul li a img:hover {
+  transform: scale(1.1);
+}
+
+.trending-header {
+  margin-left: 35px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.container .column {
+  flex: 1;
+  margin: 10px;
+  width: 100%;
+  max-width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .column img {
+  width: 100%;
+  height: 250px;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .column {
+    max-width: 100%;
+  }
+  .container img {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
